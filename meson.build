@@ -28,6 +28,20 @@ libendless = dependency('endless-0', version: libendless_req)
 json_glib = dependency('json-glib-1.0')
 mustache = dependency('mustache_c-1.0')
 
+# Data files
+
+subdir('data/templates/css')
+
+# Resources
+
+gresources = gnome.compile_resources(
+    'eknr-resources',
+    'eknr.gresource.xml',
+    dependencies: scss_generated_targets,
+    source_dir: [meson.current_source_dir(), meson.current_build_dir()],
+    c_name: 'eknr'
+)
+
 subdir('eknrenderer')
 
 # Generated Files
