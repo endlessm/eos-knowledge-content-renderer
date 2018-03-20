@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/endlessm/knowledge">
+    <file compressed="true">data/templates/article-wrapper.mst</file>
+    <file compressed="true">data/templates/css/clipboard.css</file>
+    <file compressed="true">data/templates/css/exploration-custom.css</file>
+    <file compressed="true">data/templates/css/prensa-libre.css</file>
+    <file compressed="true">data/templates/css/share-actions.css</file>
+    <file compressed="true">data/templates/css/wikihow.css</file>
+    <file compressed="true">data/templates/css/wikimedia.css</file>
+    <file compressed="true">data/templates/js/chunk.js</file>
+    <file compressed="true">data/templates/js/clipboard-manager.js</file>
+    <file compressed="true">data/templates/js/content-fixes.js</file>
+    <file compressed="true">data/templates/js/crosslink.js</file>
+    <file compressed="true">data/templates/js/hide-broken-images.js</file>
+    <file compressed="true">data/templates/js/jquery-min.js</file>
+    <file compressed="true">data/templates/js/scroll-manager.js</file>
+    <file compressed="true">data/templates/js/share-actions.js</file>
+    <file compressed="true">data/templates/legacy-article.mst</file>
+    <file compressed="true">data/templates/news-article.mst</file>
+  </gresource>
+</gresources>

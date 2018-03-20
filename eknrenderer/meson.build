@@ -16,6 +16,7 @@ installed_headers = [
 sources = [
     'eknr-errors.c',
     'eknr-renderer.c',
+    gresources
 ]
 
 include = include_directories('..')

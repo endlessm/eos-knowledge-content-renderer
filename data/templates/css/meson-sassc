@@ -1,0 +1,62 @@
+#!/usr/bin/env python
+#
+# Copyright (c) 2018 Endless Mobile, Inc.
+#
+# A small wrapper for sassc that generates a meson dependency file
+# for included partials.
+#
+# Usage: meson-sassc INPUT OUTPUT DEPFILE
+
+import argparse
+import os
+import re
+import subprocess
+import sys
+
+
+_RE_IMPORT = re.compile(r'\s*@import\s+["]([A-Za-z0-9\-_]+)["]\s*')
+
+
+def matching_lines(compiled_regex, input_fileobj):
+    '''Yield only matches of compiled_regex.'''
+    for line in input_fileobj:
+        match = compiled_regex.match(line)
+        if match != None:
+            yield match.group(1)
+
+
+def compile_sass(arg_input, arg_output, arg_depfile):
+    '''Compile sass and write depfiles.'''
+    with open(arg_input, 'r') as input_fileobj:
+        dependencies = [
+            os.path.abspath('_{}.scss'.format(line)).replace(' ', '\ ')
+            for line in matching_lines(_RE_IMPORT, input_fileobj)
+        ]
+
+    with open(arg_depfile, 'w') as depfile_fileobj:
+        depfile_fileobj.write('{arg_input}: {deps}\n'.format(arg_input=arg_input,
+                                                             deps=' '.join(dependencies)))
+
+    return subprocess.check_call(['sassc', '-a', arg_input, arg_output])
+
+
+def main():
+    '''Entry point for meson-sassc.'''
+    parser = argparse.ArgumentParser(description='sassc wrapper for meson')
+    parser.add_argument('input',
+                        help='The input file',
+                        metavar='INPUT')
+    parser.add_argument('output',
+                        help='The output file',
+                        metavar='OUTPUT')
+    parser.add_argument('depfile',
+                        help='The dependency file',
+                        metavar='DEPFILE')
+    arguments = parser.parse_args()
+    return compile_sass(os.path.abspath(arguments.input),
+                        os.path.abspath(arguments.output),
+                        os.path.abspath(arguments.depfile))
+
+
+if __name__ == '__main__':
+    main()
