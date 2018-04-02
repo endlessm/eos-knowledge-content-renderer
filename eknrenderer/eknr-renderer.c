@@ -741,8 +741,26 @@ eknr_renderer_init (EknrRenderer *self)
                                        (GDestroyNotify) free_mustache_template);
 }
 
+static void
+init_i18n (void)
+{
+  static gsize initialization_value = 0;
+
+  if (g_once_init_enter (&initialization_value))
+    {
+      bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+      bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+
+      g_once_init_leave (&initialization_value, 1);
+    }
+}
+
 EknrRenderer *
 eknr_renderer_new (void)
 {
+  /* Before creating the renderer, make sure to call bindtextdomain ()
+   * and bind_textdomain_codeset () */
+  init_i18n ();
+
   return EKNR_RENDERER (g_object_new (EKNR_TYPE_RENDERER, NULL));
 }
