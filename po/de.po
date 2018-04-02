@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Endless Mobile, Inc.
+# This file is distributed under the same license as the eos-knowledge package.
+#
+# Translators:
+# Philip Chimento <philip.chimento@gmail.com>, 2017
+# Stefan Schroeder <ondekoza@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: eos-knowledge-lib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-03 16:53+0800\n"
+"PO-Revision-Date: 2018-02-22 20:37+0000\n"
+"Last-Translator: Martin Abente Lahaye <tch@sugarlabs.org>\n"
+"Language-Team: German (http://www.transifex.com/endless-os/eos-knowledge-lib/"
+"language/de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: eknrenderer/eknr-renderer.c:459
+#, c-format
+msgid "This page contains content from %s, available under a %s license."
+msgstr "Diese Seite enthält Inhalte von %s und steht unter derLizenz: %s"
+
+#: eknrenderer/eknr-renderer.c:469
+msgid "http://wikihow.com"
+msgstr "http://de.wikihow.com"
+
+#: eknrenderer/eknr-renderer.c:471
+#, c-format
+msgid ""
+"See %s for more details, videos, pictures and attribution. Courtesy of %s, "
+"where anyone can easily learn how to do anything."
+msgstr ""
+"Auf der Seite %s sind weitere Details, Videos, Bilder und die Autoren "
+"vermerkt. Mit herzlichen Dank an %s, denn dort kann jeder einfach alles "
+"lernen."
+
+#: eknrenderer/eknr-renderer.c:615
+msgid "Copy"
+msgstr "Kopie"

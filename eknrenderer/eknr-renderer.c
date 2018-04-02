@@ -6,12 +6,13 @@
 #include <stdlib.h>
 
 #include <endless/endless.h>
-#include <glib/gi18n.h>
 #include <json-glib/json-glib.h>
 #include <mustache.h>
 
 #include "eknr-errors.h"
 #include "eknr-renderer.h"
+
+#include <glib/gi18n-lib.h>
 
 /**
  * SECTION:renderer
@@ -700,9 +701,28 @@ eknr_renderer_class_init (EknrRendererClass *klass)
 }
 
 static void
+init_i18n (void)
+{
+  static gsize initialization_value = 0;
+
+  if (g_once_init_enter (&initialization_value))
+    {
+      bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+      bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+
+      g_once_init_leave (&initialization_value, 1);
+    }
+}
+
+static void
 eknr_renderer_init (EknrRenderer *self)
 {
   EknrRendererPrivate *priv = eknr_renderer_get_instance_private (self);
+
+  /* Before initializing the renderer, make sure to call bindtextdomain ()
+   * and bind_textdomain_codeset () */
+  init_i18n ();
+
   priv->cache = g_hash_table_new_full (g_str_hash,
                                        g_str_equal,
                                        g_free,
