@@ -55,7 +55,10 @@ config = configuration_data()
 config.set_quoted('EKNR_VERSION', meson.project_version())
 config.set_quoted('GETTEXT_PACKAGE', 'eknr')
 config.set_quoted('MATHJAX_PATH', mathjax_dir)
-config.set_quoted('PACKAGE_LOCALE_DIR', join_paths(get_option('datadir'), 'locale'))
+config.set_quoted('PACKAGE_LOCALE_DIR',
+                  join_paths(get_option('prefix'),
+                             get_option('datadir'),
+                             'locale'))
 configure_file(configuration: config, output: 'config.h')
 
 requires = ['glib-2.0', 'gio-2.0', 'gobject-2.0']

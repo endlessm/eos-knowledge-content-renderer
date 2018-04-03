@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eos-knowledge-lib\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-03 13:44+0800\n"
+"POT-Creation-Date: 2018-04-03 16:53+0800\n"
 "PO-Revision-Date: 2018-03-13 18:11+0000\n"
 "Last-Translator: Roddy Shuler <roddy@endlessm.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/endless-os/eos-"
@@ -20,59 +20,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: eknrenderer/eknr-renderer.c:458
+#: eknrenderer/eknr-renderer.c:459
 #, fuzzy, c-format
 msgid "This page contains content from %s, available under a %s license."
 msgstr "此頁面含有來自 %s 的內容，由 %s 所授權。"
 
-#: eknrenderer/eknr-renderer.c:468
+#: eknrenderer/eknr-renderer.c:469
 msgid "http://wikihow.com"
 msgstr "http://zh.wikihow.com/%E9%A6%96%E9%A1%B5"
 
-#: eknrenderer/eknr-renderer.c:470
+#: eknrenderer/eknr-renderer.c:471
 #, fuzzy, c-format
 msgid ""
 "See %s for more details, videos, pictures and attribution. Courtesy of %s, "
 "where anyone can easily learn how to do anything."
 msgstr ""
-"請參閱 %s 瞭解其他詳細資訊、影片、相片及姓名標示聲明。內"
-"容來自 %s，所有人都可以在這裡輕易學會任何事。"
+"請參閱 %s 瞭解其他詳細資訊、影片、相片及姓名標示聲明。內容來自 %s，所有人都可"
+"以在這裡輕易學會任何事。"
 
-#: eknrenderer/eknr-renderer.c:614
+#: eknrenderer/eknr-renderer.c:615
 msgid "Copy"
 msgstr "複製"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

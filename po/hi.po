@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eos-knowledge-lib\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-03 13:44+0800\n"
+"POT-Creation-Date: 2018-04-03 16:53+0800\n"
 "PO-Revision-Date: 2018-02-22 20:37+0000\n"
 "Last-Translator: Martin Abente Lahaye <tch@sugarlabs.org>\n"
 "Language-Team: Hindi (http://www.transifex.com/endless-os/eos-knowledge-lib/"
@@ -20,53 +20,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: eknrenderer/eknr-renderer.c:458
+#: eknrenderer/eknr-renderer.c:459
 #, fuzzy, c-format
 msgid "This page contains content from %s, available under a %s license."
-msgstr ""
-"इस पृष्ठ में %s की सामग्री होती है, जो %s लाइसेंस के अंतर्गत "
-"उपलब्ध होती है."
+msgstr "इस पृष्ठ में %s की सामग्री होती है, जो %s लाइसेंस के अंतर्गत उपलब्ध होती है."
 
-#: eknrenderer/eknr-renderer.c:468
+#: eknrenderer/eknr-renderer.c:469
 msgid "http://wikihow.com"
 msgstr "http://wikihow.com"
 
-#: eknrenderer/eknr-renderer.c:470
+#: eknrenderer/eknr-renderer.c:471
 #, fuzzy, c-format
 msgid ""
 "See %s for more details, videos, pictures and attribution. Courtesy of %s, "
 "where anyone can easily learn how to do anything."
 msgstr ""
-"अधिक विवरण, वीडियो, चित्रों और विशेषता के लिए %s देखें. "
-"%s को श्रेय, जहाँ कोई भी आसानी से सीख सकता है कि कुछ भी कैसे करना है."
+"अधिक विवरण, वीडियो, चित्रों और विशेषता के लिए %s देखें. %s को श्रेय, जहाँ कोई भी आसानी "
+"से सीख सकता है कि कुछ भी कैसे करना है."
 
-#: eknrenderer/eknr-renderer.c:614
+#: eknrenderer/eknr-renderer.c:615
 msgid "Copy"
 msgstr "प्रतिलिपि करें"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

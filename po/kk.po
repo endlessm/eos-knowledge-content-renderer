@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eos-knowledge-lib\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-03 13:44+0800\n"
+"POT-Creation-Date: 2018-04-03 16:53+0800\n"
 "PO-Revision-Date: 2018-02-22 20:37+0000\n"
 "Last-Translator: Martin Abente Lahaye <tch@sugarlabs.org>\n"
 "Language-Team: Kazakh (http://www.transifex.com/endless-os/eos-knowledge-lib/"
@@ -18,22 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: eknrenderer/eknr-renderer.c:458
+#: eknrenderer/eknr-renderer.c:459
 #, c-format
 msgid "This page contains content from %s, available under a %s license."
 msgstr ""
 
-#: eknrenderer/eknr-renderer.c:468
+#: eknrenderer/eknr-renderer.c:469
 msgid "http://wikihow.com"
 msgstr ""
 
-#: eknrenderer/eknr-renderer.c:470
+#: eknrenderer/eknr-renderer.c:471
 #, c-format
 msgid ""
 "See %s for more details, videos, pictures and attribution. Courtesy of %s, "
 "where anyone can easily learn how to do anything."
 msgstr ""
 
-#: eknrenderer/eknr-renderer.c:614
+#: eknrenderer/eknr-renderer.c:615
 msgid "Copy"
 msgstr ""

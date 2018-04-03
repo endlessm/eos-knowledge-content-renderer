@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eos-knowledge-lib\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-03 13:44+0800\n"
+"POT-Creation-Date: 2018-04-03 16:53+0800\n"
 "PO-Revision-Date: 2018-03-01 02:15+0000\n"
 "Last-Translator: Nuritzi Sanchez <ns@endlessm.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/endless-os/eos-knowledge-"
@@ -25,62 +25,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: eknrenderer/eknr-renderer.c:458
+#: eknrenderer/eknr-renderer.c:459
 #, fuzzy, c-format
 msgid "This page contains content from %s, available under a %s license."
 msgstr ""
-"Esta página contiene contenido de %s, disponible bajo una "
-"licencia de %s."
+"Esta página contiene contenido de %s, disponible bajo una licencia de %s."
 
-#: eknrenderer/eknr-renderer.c:468
+#: eknrenderer/eknr-renderer.c:469
 msgid "http://wikihow.com"
 msgstr "http://es.wikihow.com"
 
-#: eknrenderer/eknr-renderer.c:470
+#: eknrenderer/eknr-renderer.c:471
 #, fuzzy, c-format
 msgid ""
 "See %s for more details, videos, pictures and attribution. Courtesy of %s, "
 "where anyone can easily learn how to do anything."
 msgstr ""
-"Ve %s para más detalles, videos, fotos y atribuciones. "
-"Por cortesía de %s, donde cualquier persona puede fácilmente "
-"aprender cómo hacer cualquier cosa."
+"Ve %s para más detalles, videos, fotos y atribuciones. Por cortesía de %s, "
+"donde cualquier persona puede fácilmente aprender cómo hacer cualquier cosa."
 
-#: eknrenderer/eknr-renderer.c:614
+#: eknrenderer/eknr-renderer.c:615
 msgid "Copy"
 msgstr "Copiar"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
