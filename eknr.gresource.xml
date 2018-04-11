@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/com/endlessm/knowledge">
-    <file compressed="true">data/templates/article-wrapper.mst</file>
     <file compressed="true">data/templates/css/clipboard.css</file>
     <file compressed="true">data/templates/css/exploration-custom.css</file>
     <file compressed="true">data/templates/css/share-actions.css</file>
