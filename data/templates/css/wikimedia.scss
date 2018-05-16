@@ -569,4 +569,20 @@ $spacing-elements: 30px;
             display: none;
         }
     }
+    .mw-parser-output {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mw-parser-output > * {
+        order: 2;
+    }
+
+    .mw-parser-output > p:first-of-type {
+        order: 0;
+    }
+
+    .infobox {
+        order: 1;
+    }
 }
