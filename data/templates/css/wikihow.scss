@@ -360,3 +360,11 @@ h2 + ol, h3 + ol, .steps_list_2 {
         }
     }
 }
+
+@media (device-width: 360px) {
+    #bodycontents {
+        .eos-article-title h1 {
+            display: none;
+        }
+    }
+}
