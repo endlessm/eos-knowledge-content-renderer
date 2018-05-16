@@ -8,6 +8,7 @@
     <file compressed="true">data/templates/css/wikimedia.css</file>
     <file compressed="true">data/templates/js/chunk.js</file>
     <file compressed="true">data/templates/js/clipboard-manager.js</file>
+    <file compressed="true">data/templates/js/collapse-infotable.js</file>
     <file compressed="true">data/templates/js/content-fixes.js</file>
     <file compressed="true">data/templates/js/crosslink.js</file>
     <file compressed="true">data/templates/js/hide-broken-images.js</file>

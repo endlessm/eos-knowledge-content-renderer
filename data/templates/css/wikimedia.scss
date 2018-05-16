@@ -463,6 +463,11 @@ $spacing-elements: 30px;
     font-weight: 700;
 }
 
+#toggle,
+.toggle_label {
+   display: none; // Hide input element, only needed in mobile
+}
+
 //////////////////////////////
 // Responsive
 //////////////////////////////
@@ -569,6 +574,7 @@ $spacing-elements: 30px;
             display: none;
         }
     }
+
     .mw-parser-output {
         display: flex;
         flex-direction: column;
@@ -582,7 +588,51 @@ $spacing-elements: 30px;
         order: 0;
     }
 
-    .infobox {
+    .infobox-toggle > .infobox {
+        float: none !important;
+        margin-left: 0px !important;
+        margin-bottom: 0px !important;
+        padding-top: 0.5em;
+    }
+
+    .infobox-toggle-wrapper {
         order: 1;
+        padding: 1em;
+        display: inline-block;
+        box-shadow: 0 1px 2px 0 rgba(153, 153, 153, 0.35);
+    }
+
+    .infobox-toggle {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    .toggle_label {
+        width: 100%;
+        font-size: 12px;
+        background: #fff;
+        cursor: pointer;
+        display: block;
+        font-weight: bold;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .toggle_label:after {
+        content: "▲";
+        float: right;
+        font-size: 12px;
+    }
+
+    #toggle:checked ~ .infobox-toggle:first-of-type {
+        height: 0px;
+    }
+
+    #toggle:not(:checked) ~ .infobox-toggle:first-of-type {
+        height: auto;
+    }
+
+    #toggle:checked ~ .toggle_label:after {
+        content: "▼";
     }
 }
