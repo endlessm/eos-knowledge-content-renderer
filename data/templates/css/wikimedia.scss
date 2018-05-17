@@ -692,4 +692,13 @@ div[style*="float:right"] {
     .thumb .thumbcaption{
         margin-bottom: 0px;
     }
+
+    #bodycontents #inside-content ul,
+    #bodycontents #inside-content ol,
+    #bodycontents #inside-content ul li,
+    #bodycontents #inside-content ol li
+    {
+       width: auto;
+       margin-left: 0;
+    }
 }
