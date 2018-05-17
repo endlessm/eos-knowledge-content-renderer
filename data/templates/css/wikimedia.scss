@@ -595,9 +595,15 @@ div[style*="float:right"] {
             line-height: 1.71;
             padding: $spacing-mobile $cols * 2;
 
+            p, ul, ol, .dablink {
+                margin-bottom: $spacing-mobile * 4;
+                margin-top: $spacing-mobile * 4;
+            }
+
             h2, .firstHeading, h3, h4, h5 {
                 color: $text-color-title;
                 line-height: 1.125;
+                margin-bottom: $spacing-mobile * 2;
             }
 
             h2, .firstHeading {
