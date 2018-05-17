@@ -26,6 +26,10 @@ $table-color-title: #ddddd5;
 $divider-color: #ccc;
 $divider-color-composite: #959595;
 
+$spacing: 15px;
+$spacing-elements: 30px;
+
+
 //////////////////////////////
 // Styles
 //////////////////////////////
@@ -79,8 +83,6 @@ div[style*="float:right"] {
     display: none !important;
 }
 
-$spacing-elements: 30px;
-
 #bodycontents {
     .eos-article-title h1 {
         color: $text-color-title;
@@ -106,7 +108,6 @@ $spacing-elements: 30px;
     }
 
     #inside-content {
-        $spacing: 15px;
         $spacing-newh2: $spacing * 4;
         $spacing-newh3: $spacing * 3;
         $spacing-newh4: $spacing * 2.5;
