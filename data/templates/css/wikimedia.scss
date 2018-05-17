@@ -686,4 +686,10 @@ div[style*="float:right"] {
     #toggle:checked ~ .toggle_label:after {
         content: "▼";
     }
+
+    #bodycontents #inside-content .thumb,
+    #bodycontents #inside-content .tright,
+    .thumb .thumbcaption{
+        margin-bottom: 0px;
+    }
 }
