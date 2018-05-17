@@ -28,6 +28,8 @@ $divider-color-composite: #959595;
 
 $spacing: 15px;
 $spacing-elements: 30px;
+$spacing-mobile: 2px;
+$spacing-mobile-elements: 4px;
 
 
 //////////////////////////////
@@ -583,7 +585,6 @@ div[style*="float:right"] {
         }
 
         #inside-content {
-            $spacing-mobile: 2px;
             $spacing-mobile-newh2: $spacing-mobile * 4;
             $spacing-mobile-newh3: $spacing-mobile * 3;
             $spacing-mobile-newh4: $spacing-mobile * 2.5;
@@ -592,7 +593,7 @@ div[style*="float:right"] {
             color: $text-color-body;
             font: 1.0rem;
             line-height: 1.71;
-            padding: 20px $cols * 2;
+            padding: $spacing-mobile $cols * 2;
 
             h2, .firstHeading, h3, h4, h5 {
                 color: $text-color-title;
