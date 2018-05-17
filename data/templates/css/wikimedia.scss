@@ -569,9 +569,58 @@ $spacing-elements: 30px;
 }
 
 @media (device-width: 360px) {
+    html, body {
+        margin: 0;
+        height: 100%;
+        font: 16px $font-primary;
+        background-color: #fff;
+    }
+
     #bodycontents {
         .eos-article-title h1 {
             display: none;
+        }
+
+        #inside-content {
+            $spacing-mobile: 2px;
+            $spacing-mobile-newh2: $spacing-mobile * 4;
+            $spacing-mobile-newh3: $spacing-mobile * 3;
+            $spacing-mobile-newh4: $spacing-mobile * 2.5;
+            $spacing-mobile-newh5: $spacing-mobile * 1.7;
+            $spacing-mobile-newh6: $spacing-mobile * 1.3;
+            color: $text-color-body;
+            font: 1.0rem;
+            line-height: 1.71;
+            padding: 20px $cols * 2;
+
+            h2, .firstHeading, h3, h4, h5 {
+                color: $text-color-title;
+                line-height: 1.125;
+            }
+
+            h2, .firstHeading {
+                font: 400 1.4rem $font-secondary;
+                margin-top: $spacing-mobile-newh2;
+                + h3, + h4, + h5, + h6 {
+                    margin-top: $spacing-mobile;
+                }
+            }
+
+            h3 {
+                font: 400 1.3rem $font-secondary;
+                margin-top: $spacing-mobile-newh3;
+            }
+            h4 {
+                font: 400 1.2rem $font-secondary;
+                margin-top: $spacing-mobile-newh4;
+            }
+            h5 {
+                font: 400 1.1rem $font-secondary;
+                margin-top: $spacing-mobile-newh5;
+            }
+            h6 {
+                margin-top: $spacing-mobile-newh6;
+            }
         }
     }
 
