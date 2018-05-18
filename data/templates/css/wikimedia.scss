@@ -687,4 +687,8 @@ div[style*="float:right"] {
        width: auto;
        margin-left: 0;
     }
+
+    #bodycontents #inside-content .column-count-2 {
+       display: inherit;
+    }
 }
