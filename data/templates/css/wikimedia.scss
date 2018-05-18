@@ -28,9 +28,6 @@ $divider-color-composite: #959595;
 
 $spacing: 15px;
 $spacing-elements: 30px;
-$spacing-mobile: 2px;
-$spacing-mobile-elements: 4px;
-
 
 //////////////////////////////
 // Styles
@@ -42,12 +39,6 @@ $spacing-mobile-elements: 4px;
     &[align="center"] {
         text-align: center;
     }
-}
-
-html, body {
-    height: 100%;
-    font: 20px $font-primary;    /* Root font */
-    background-color: #fff;
 }
 
 a[href] {
@@ -85,321 +76,332 @@ div[style*="float:right"] {
     display: none !important;
 }
 
-#bodycontents {
-    .eos-article-title h1 {
-        color: $text-color-title;
-        font: 700 3.2rem $font-secondary;   // 64px // Root: 20px 
-        text-align: center;
-        line-height: 1.125;
-        margin-bottom: $spacing-elements;
-        margin-top: $spacing-elements;
-        padding: 50px 80px 70px 80px; // 60px because of mw-body top padding of 20px
-        border-bottom: 1px solid $divider-color;
+@mixin responsive-elements($font-size, $spacing, $spacing-elements) {
+
+    html, body {
+        height: 100%;
+        font: $font-size $font-primary;    /* Root font */
+        background-color: #fff;
     }
 
-    .disclaimer {
-        font: 400 0.8rem $font-secondary;   // 16px // Root: 20px
-        text-align: center;
-        padding: 40px;
-        margin-top: $spacing-elements;
-        border-top: 1px solid $divider-color;
-        clear: both;
-        p {
-            width: 100% !important;
-        }
-    }
-
-    #inside-content {
-        $spacing-newh2: $spacing * 4;
-        $spacing-newh3: $spacing * 3;
-        $spacing-newh4: $spacing * 2.5;
-        $spacing-newh5: $spacing * 1.7;
-        $spacing-newh6: $spacing * 1.3;
-        color: $text-color-body;
-        font: 1.0rem;
-        line-height: 1.71;
-        padding: 20px $cols * 2;
-        
-        img, video {
-            height: auto;
-            max-width: 100%;
-        }
-
-        h2, .firstHeading, h3, h4, h5 {
+    #bodycontents {
+        .eos-article-title h1 {
             color: $text-color-title;
+            font: 700 3.2rem $font-secondary;   // 64px // Root: 20px
+            text-align: center;
             line-height: 1.125;
+            margin-bottom: $spacing-elements;
+            margin-top: $spacing-elements;
+            padding: 50px 80px 70px 80px; // 60px because of mw-body top padding of 20px
+            border-bottom: 1px solid $divider-color;
         }
 
-        h2, .firstHeading {
-            font: 700 2.2rem $font-secondary;  // 44px // Root: 20px 
-            margin-top: $spacing-newh2;
-            + h3, + h4, + h5, + h6 {
-                margin-top: $spacing;
-            }
-        }
-
-        h3 {
-            font: 700 1.7rem $font-secondary;  // 34px // Root: 20px 
-            margin-top: $spacing-newh3;
-        }
-
-        h4 {
-            font: 700 1.4rem $font-secondary;  // 28px // Root: 20px
-            margin-top: $spacing-newh4;
-        }
-
-        h5 {
-            font: 700 1.2rem $font-secondary;  // 24px // Root: 20px
-            margin-top: $spacing-newh5;
-        }
-
-        h6 {
-            font: 400 1.0rem $font-secondary;  // 20px // Root: 20px
-            margin-top: $spacing-newh6;
-            font-style: italic;
-        }
-
-        sup {
-            font-size: xx-small;
-            vertical-align: super;
-        }
-
-        p, ul, ol, .dablink {
-            margin-bottom: $spacing;
-            margin-top: $spacing;
-        }
-
-        ul {
-            list-style: disc;
-            margin-left: 30px;
-            ul, li {
-                margin-bottom: 5px;
-                width: 100%;
-            }
-        }
-        ol {
-            list-style: decimal;
-            margin-left: 30px;
-        }
-
-        table {
-            color: $text-color-body;
-        }
-
-        .gallery {
-            margin: 0 0 0 0 !important;
-
-            img {
-                width: 100%;
-            }
-
-            div, p {
-                margin: 0 0 0 0 !important;
-            }
-
-            .gallerybox {
-                width: 100% !important;
-                display: inline-block;
-                margin-bottom: 20px;
-
-                div, .gallerytext p, .gallerytextwrapper {
-                    width: auto !important;
-                }
-
-                .gallerytext {
-                    font-family: $font-secondary; // 16 px
-                    font-size: 0.8rem;
-                    line-height: 1.125;        
-                    padding: 10px;
-                    background-color: $table-color-body;
-                    margin-top: 0;
-                    margin-bottom: $spacing-elements;
-                    clear: both;
-                }
-
-                .thumb {
-                    clear: none;
-                    width: 100% !important;
-                }
-            }
-        }
-        .plainlist {
-            ul, ol {
-                list-style: none;
-                margin-bottom: 0;
-                margin-left: 0;
-            }
-        }
-        .rellink {
-            font-style: italic;
-            margin-bottom: $spacing;
-            margin-top: 0;
-        }
-        
-
-        .hlist {
-            dd, dt, li {
-                display: inline;
-                margin: 0;
-            }
-            dd, li {
-                &:after {
-                    content: " · ";
-                    font-weight: bold;
-                }
-                &:last-child:after {
-                    display: none;
-                }
-            }
-        }
-        .wikitable {
-            font-size: 0.8rem;    // 16px // Root: 20px
-            background: #fff;
-            border-collapse: collapse;
-            clear: left;
-            float: none !important;
-            margin-bottom: $spacing;
-            width: 100% !important;
-            box-sizing: border-box;
-            p {
-                margin: 0 0 0 0 !important;
-            }
-            th, td {
-                background-color: $table-color-body;
-                border: 1px solid #fff;
-                padding: 5px 10px;
-            }
-            th {
-                background: $table-color-title;
-                font-weight: 700;
-                text-align: center;
-            }
-        }
-
-        tbody {
-            font-size: 0.8rem;    // 16px // Root: 20px
-            background: #fff;
-            border-collapse: collapse;
-            clear: left;
-            float: none !important;
-            margin-bottom: $spacing;
-            width: 100% !important;
-            p, ul {
-                margin: 0 0 0 0;
-            }
-            dl, ul {
-                margin-left: 20px;
-            }
-        }
-
-        .mw-normal-catlinks {
+        .disclaimer {
+            font: 400 0.8rem $font-secondary;   // 16px // Root: 20px
+            text-align: center;
+            padding: 40px;
+            margin-top: $spacing-elements;
             border-top: 1px solid $divider-color;
             clear: both;
-            margin-top: $spacing;
-            padding-top: $spacing - 5;
-            ul {
-                display: inline;
-                list-style: none;
-                margin: 0;
-            }
-            li {
-                display: inline;
-                &:before {
-                    content: " · ";
-                }
+            p {
+                width: 100% !important;
             }
         }
 
-
-        .infobox, 
-        .infobox_v2, 
-        .thumb, 
-        .mbox-small, 
-        .tright, 
-        .floatright, 
-        .vertical-navbox,
-        table[align="right"] {
+        #inside-content {
+            $spacing-newh2: $spacing * 4;
+            $spacing-newh3: $spacing * 3;
+            $spacing-newh4: $spacing * 2.5;
+            $spacing-newh5: $spacing * 1.7;
+            $spacing-newh6: $spacing * 1.3;
             color: $text-color-body;
-            font: 400 0.8rem $font-secondary;
+            font: 1.0rem;
             line-height: 1.71;
-            margin-bottom: $spacing-elements;
-            border: none !important;
+            padding: 20px $cols * 2;
 
-            * {
-                text-align: left !important;
+            img, video {
+                height: auto;
+                max-width: 100%;
             }
 
-            p, ul {
-                width: 100% !important;
-                margin-top: 0 !important;
-                margin-bottom: 0 !important;
+            h2, .firstHeading, h3, h4, h5 {
+                color: $text-color-title;
+                line-height: 1.125;
             }
 
-            small {
-                font-size: 0.6rem;
+            h2, .firstHeading {
+                font: 700 2.2rem $font-secondary;  // 44px // Root: 20px
+                margin-top: $spacing-newh2;
+                + h3, + h4, + h5, + h6 {
+                    margin-top: $spacing;
+                }
             }
 
-            i {
+            h3 {
+                font: 700 1.7rem $font-secondary;  // 34px // Root: 20px
+                margin-top: $spacing-newh3;
+            }
+
+            h4 {
+                font: 700 1.4rem $font-secondary;  // 28px // Root: 20px
+                margin-top: $spacing-newh4;
+            }
+
+            h5 {
+                font: 700 1.2rem $font-secondary;  // 24px // Root: 20px
+                margin-top: $spacing-newh5;
+            }
+
+            h6 {
+                font: 400 1.0rem $font-secondary;  // 20px // Root: 20px
+                margin-top: $spacing-newh6;
                 font-style: italic;
             }
 
-             .fn {
-                 color: $text-color-title !important;
-                font: 1.25rem $font-secondary !important; // 25px // Root: 20px
-                font-weight: 700 !important;
-             }
-
-            th, /*th .eos-no-link,*/ th .nowrap, /*th div,*/ th span, caption {        // FIXME: The commented elements mess up the dinosaurs timelines
-                background-color: $table-color-title !important;
+            sup {
+                font-size: xx-small;
+                vertical-align: super;
             }
 
-            td {
-                background-color: $table-color-body;
+            p, ul, ol, .dablink {
+                margin-bottom: $spacing;
+                margin-top: $spacing;
             }
 
-            th, td, caption {
-                padding: 13px 20px !important;
+            ul {
+                list-style: disc;
+                margin-left: 30px;
+                ul, li {
+                    margin-bottom: 5px;
+                    width: 100%;
+                }
             }
-            
-            *[style*="nowrap"] {
-                white-space: normal !important;
+            ol {
+                list-style: decimal;
+                margin-left: 30px;
             }
 
-            img {
+            table {
+                color: $text-color-body;
+            }
+
+            .gallery {
+                margin: 0 0 0 0 !important;
+
+                img {
+                    width: 100%;
+                }
+
+                div, p {
+                    margin: 0 0 0 0 !important;
+                }
+
+                .gallerybox {
+                    width: 100% !important;
+                    display: inline-block;
+                    margin-bottom: 20px;
+
+                    div, .gallerytext p, .gallerytextwrapper {
+                        width: auto !important;
+                    }
+
+                    .gallerytext {
+                        font-family: $font-secondary; // 16 px
+                        font-size: 0.8rem;
+                        line-height: 1.125;
+                        padding: 10px;
+                        background-color: $table-color-body;
+                        margin-top: 0;
+                        margin-bottom: $spacing-elements;
+                        clear: both;
+                    }
+
+                    .thumb {
+                        clear: none;
+                        width: 100% !important;
+                    }
+                }
+            }
+            .plainlist {
+                ul, ol {
+                    list-style: none;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                }
+            }
+            .rellink {
+                font-style: italic;
+                margin-bottom: $spacing;
+                margin-top: 0;
+            }
+        
+
+            .hlist {
+                dd, dt, li {
+                    display: inline;
+                    margin: 0;
+                }
+                dd, li {
+                    &:after {
+                        content: " · ";
+                        font-weight: bold;
+                    }
+                    &:last-child:after {
+                        display: none;
+                    }
+                }
+            }
+            .wikitable {
+                font-size: 0.8rem;    // 16px // Root: 20px
+                background: #fff;
+                border-collapse: collapse;
+                clear: left;
+                float: none !important;
+                margin-bottom: $spacing;
                 width: 100% !important;
-                height: auto !important;
-                top: 0 !important;
-                left: 0 !important;
-                bottom: 0 !important;
-                right: 0 !important;
-            }
-
-            .maptable {
-                td, th {
-                    border-top: 0 none;
+                box-sizing: border-box;
+                p {
+                    margin: 0 0 0 0 !important;
                 }
-            }
-            .mergedrow {
-                td, th {
-                    border-top: 0 none;
-                    padding: 0 0.6em 0.2em;
+                th, td {
+                    background-color: $table-color-body;
+                    border: 1px solid #fff;
+                    padding: 5px 10px;
                 }
-            }
-            .mergedbottomrow {
-                td, th {
-                    border-top: 0 none;
-                    padding: 0 0.6em 0.4em;
-                }
-            }
-            #Timeline-row {
-                #end-border {
-                    display: none;
+                th {
+                    background: $table-color-title;
+                    font-weight: 700;
+                    text-align: center;
                 }
             }
 
+            tbody {
+                font-size: 0.8rem;    // 16px // Root: 20px
+                background: #fff;
+                border-collapse: collapse;
+                clear: left;
+                float: none !important;
+                margin-bottom: $spacing;
+                width: 100% !important;
+                p, ul {
+                    margin: 0 0 0 0;
+                }
+                dl, ul {
+                    margin-left: 20px;
+                }
+            }
+
+            .mw-normal-catlinks {
+                border-top: 1px solid $divider-color;
+                clear: both;
+                margin-top: $spacing;
+                padding-top: $spacing - 5;
+                ul {
+                    display: inline;
+                    list-style: none;
+                    margin: 0;
+                }
+                li {
+                    display: inline;
+                    &:before {
+                        content: " · ";
+                    }
+                }
+            }
+
+
+            .infobox,
+            .infobox_v2,
+            .thumb,
+            .mbox-small,
+            .tright,
+            .floatright,
+            .vertical-navbox,
+            table[align="right"] {
+                color: $text-color-body;
+                font: 400 0.8rem $font-secondary;
+                line-height: 1.71;
+                margin-bottom: $spacing-elements;
+                border: none !important;
+
+                * {
+                    text-align: left !important;
+                }
+
+                p, ul {
+                    width: 100% !important;
+                    margin-top: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+
+                small {
+                    font-size: 0.6rem;
+                }
+
+                i {
+                    font-style: italic;
+                }
+
+                .fn {
+                    color: $text-color-title !important;
+                    font: 1.25rem $font-secondary !important; // 25px // Root: 20px
+                    font-weight: 700 !important;
+                }
+
+                th, /*th .eos-no-link,*/ th .nowrap, /*th div,*/ th span, caption {        // FIXME: The commented elements mess up the dinosaurs timelines
+                    background-color: $table-color-title !important;
+                }
+
+                td {
+                    background-color: $table-color-body;
+                }
+
+                th, td, caption {
+                    padding: 13px 20px !important;
+                }
+            
+                *[style*="nowrap"] {
+                    white-space: normal !important;
+                }
+
+                img {
+                    width: 100% !important;
+                    height: auto !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    bottom: 0 !important;
+                    right: 0 !important;
+                }
+
+                .maptable {
+                    td, th {
+                        border-top: 0 none;
+                    }
+                }
+                .mergedrow {
+                    td, th {
+                        border-top: 0 none;
+                        padding: 0 0.6em 0.2em;
+                    }
+                }
+                .mergedbottomrow {
+                    td, th {
+                        border-top: 0 none;
+                        padding: 0 0.6em 0.4em;
+                    }
+                }
+                #Timeline-row {
+                    #end-border {
+                        display: none;
+                    }
+                }
+
+            }
         }
     }
 }
+
+@include responsive-elements($font-size: 22px, $spacing: $spacing, $spacing-elements: $spacing-elements);
 
 .mediaContainer {
     margin: 0 auto;
@@ -572,62 +574,38 @@ div[style*="float:right"] {
 }
 
 @media (device-width: 360px) {
+    @include responsive-elements($font-size: 16px, $spacing: 2px, $spacing-elements: 4px);
+
     html, body {
         margin: 0;
-        height: 100%;
-        font: 16px $font-primary;
-        background-color: #fff;
     }
 
     #bodycontents {
         .eos-article-title h1 {
             display: none;
         }
-
         #inside-content {
-            $spacing-mobile-newh2: $spacing-mobile * 4;
-            $spacing-mobile-newh3: $spacing-mobile * 3;
-            $spacing-mobile-newh4: $spacing-mobile * 2.5;
-            $spacing-mobile-newh5: $spacing-mobile * 1.7;
-            $spacing-mobile-newh6: $spacing-mobile * 1.3;
-            color: $text-color-body;
-            font: 1.0rem;
-            line-height: 1.71;
-            padding: $spacing-mobile $cols * 2;
-
             p, ul, ol, .dablink {
-                margin-bottom: $spacing-mobile * 4;
-                margin-top: $spacing-mobile * 4;
+                margin-bottom: 2px * 4;
+                margin-top: 2px * 4;
             }
 
             h2, .firstHeading, h3, h4, h5 {
                 color: $text-color-title;
                 line-height: 1.125;
-                margin-bottom: $spacing-mobile * 2;
             }
 
             h2, .firstHeading {
                 font: 400 1.4rem $font-secondary;
-                margin-top: $spacing-mobile-newh2;
-                + h3, + h4, + h5, + h6 {
-                    margin-top: $spacing-mobile;
-                }
             }
-
             h3 {
                 font: 400 1.3rem $font-secondary;
-                margin-top: $spacing-mobile-newh3;
             }
             h4 {
                 font: 400 1.2rem $font-secondary;
-                margin-top: $spacing-mobile-newh4;
             }
             h5 {
                 font: 400 1.1rem $font-secondary;
-                margin-top: $spacing-mobile-newh5;
-            }
-            h6 {
-                margin-top: $spacing-mobile-newh6;
             }
         }
     }
