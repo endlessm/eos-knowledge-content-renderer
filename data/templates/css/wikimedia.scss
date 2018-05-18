@@ -595,6 +595,11 @@ div[style*="float:right"] {
                 margin-top: 2px * 4;
             }
 
+            ul, ol {
+                width: auto;
+                margin-left: 0;
+            }
+
             h2, .firstHeading, h3, h4, h5 {
                 color: $text-color-title;
                 line-height: 1.125;
@@ -603,14 +608,21 @@ div[style*="float:right"] {
             h2, .firstHeading {
                 font: 400 1.4rem $font-secondary;
             }
+
             h3 {
                 font: 400 1.3rem $font-secondary;
             }
+
             h4 {
                 font: 400 1.2rem $font-secondary;
             }
+
             h5 {
                 font: 400 1.1rem $font-secondary;
+            }
+
+            .column-count-2 {
+                display: inherit;
             }
         }
     }
@@ -678,21 +690,7 @@ div[style*="float:right"] {
 
     #bodycontents #inside-content .thumb,
     #bodycontents #inside-content .tright,
-    .thumb .thumbcaption{
+    .thumb .thumbcaption {
         margin-bottom: 0px;
-    }
-
-    #bodycontents #inside-content ul,
-    #bodycontents #inside-content ol,
-    #bodycontents #inside-content ul li,
-    #bodycontents #inside-content ul ul,
-    #bodycontents #inside-content ol li
-    {
-       width: auto;
-       margin-left: 0;
-    }
-
-    #bodycontents #inside-content .column-count-2 {
-       display: inherit;
     }
 }
