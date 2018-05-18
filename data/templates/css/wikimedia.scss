@@ -170,7 +170,7 @@ div[style*="float:right"] {
 
             ul {
                 list-style: disc;
-                margin-left: 30px;
+                margin-left: $spacing-elements;
                 ul, li {
                     margin-bottom: 5px;
                     width: 100%;
@@ -178,7 +178,7 @@ div[style*="float:right"] {
             }
             ol {
                 list-style: decimal;
-                margin-left: 30px;
+                margin-left: $spacing-elements;
             }
 
             table {
