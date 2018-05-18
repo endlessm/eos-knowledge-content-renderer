@@ -394,6 +394,50 @@ h2 + ol, h3 + ol, .steps_list_2 {
             h5 {
                 font: 400 1.1rem $font-secondary;
             }
-        }
+       }
+       .section li, .section ul {
+            padding: 0;
+       }
+    }
+
+    ol {
+        counter-reset: li;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    ol > li {
+        position: relative;
+        list-style: none;
+        background: #f6f6f6;
+    }
+
+    ol > li:before {
+        content: counter(li);
+        counter-increment: li;
+        box-sizing: border-box;
+        padding: 4px;
+        color: #fff;
+        background: #666;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    li ol, li ul {
+        margin-top: 6px;
+    }
+
+    ol ol li:last-child {
+        margin-bottom:0;
+    }
+
+    .section li, .section ul {
+        background-color: transparent;
+    }
+
+    h2 + ol .mwimg, h3 + ol .mwimg, .steps_list_2 .mwimg {
+        margin-top: 0;
     }
 }
