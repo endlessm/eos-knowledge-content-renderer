@@ -28,6 +28,7 @@ $divider-color-composite: #959595;
 
 $spacing: 15px;
 $spacing-elements: 30px;
+$padding: 20px;
 
 //////////////////////////////
 // Styles
@@ -76,7 +77,7 @@ div[style*="float:right"] {
     display: none !important;
 }
 
-@mixin responsive-elements($font-size, $spacing, $spacing-elements) {
+@mixin responsive-elements($font-size, $spacing, $spacing-elements, $padding) {
 
     html, body {
         height: 100%;
@@ -117,7 +118,7 @@ div[style*="float:right"] {
             color: $text-color-body;
             font: 1.0rem;
             line-height: 1.71;
-            padding: 20px $cols * 2;
+            padding: $padding $cols * 2;
 
             img, video {
                 height: auto;
@@ -401,7 +402,7 @@ div[style*="float:right"] {
     }
 }
 
-@include responsive-elements($font-size: 22px, $spacing: $spacing, $spacing-elements: $spacing-elements);
+@include responsive-elements($font-size: 22px, $spacing: $spacing, $spacing-elements: $spacing-elements, $padding: $padding);
 
 .mediaContainer {
     margin: 0 auto;
@@ -574,7 +575,7 @@ div[style*="float:right"] {
 }
 
 @media (device-width: 360px) {
-    @include responsive-elements($font-size: 16px, $spacing: 2px, $spacing-elements: 4px);
+    @include responsive-elements($font-size: 16px, $spacing: 2px, $spacing-elements: 4px, $padding: 2px);
 
     html, body {
         margin: 0;
