@@ -182,12 +182,8 @@ $spacing-elements: 30px;
     ul {
         margin-top: $spacing-elements;
         li {
+            line-style: disc;
             padding: 0;
-        }
-        li:before {
-            content: "• ";
-            display: inline;
-            margin-right: 4px;
         }
     }
 }
