@@ -467,7 +467,7 @@ get_legacy_disclaimer_section_content (const char   *source,
       g_autofree char *wikihow_article_link = format_a_href_link (original_uri,
                                                                   title);
       g_autofree char *wikihow_link = format_a_href_link (_("http://wikihow.com"),
-                                                          wikihow_article_link);
+                                                          "WikiHow");
       g_autofree char *disclaimer = g_strdup_printf (_("See %s for more details, videos, pictures and attribution. Courtesy of %s, where anyone can easily learn how to do anything."),
                                                      wikihow_article_link,
                                                      wikihow_link);
