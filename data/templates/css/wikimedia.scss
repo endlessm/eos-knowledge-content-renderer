@@ -630,7 +630,7 @@ and (max-device-width: 719px) {
         }
     }
 
-    #bodycontents #inside-content div {
+    #bodycontents #inside-content div:first-of-type {
         display: flex;
         flex-direction: column;
     }
