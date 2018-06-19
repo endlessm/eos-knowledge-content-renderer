@@ -363,7 +363,10 @@ h2 + ol, h3 + ol, .steps_list_2 {
     }
 }
 
-@media (device-width: 360px) {
+/* Smartphones (portrait and landscape) */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 719px) {
     @include responsive-elements($font-size: 16px, $spacing: 2px, $spacing-elements: 4px, $padding: 2px);
 
     #bodycontents {
