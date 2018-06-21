@@ -1,21 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Endless Mobile, Inc.
-# This file is distributed under the same license as the eos-knowledge package.
-#
-# Translators:
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the eknr package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: eos-knowledge-lib\n"
+"Project-Id-Version: eknr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-03 16:53+0800\n"
-"PO-Revision-Date: 2018-02-22 20:37+0000\n"
-"Last-Translator: Martin Abente Lahaye <tch@sugarlabs.org>\n"
-"Language-Team: Swedish (http://www.transifex.com/endless-os/eos-knowledge-"
-"lib/language/sv/)\n"
-"Language: sv\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: Swedish (https://www.transifex.com/endless-os/teams/9016/sv/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: eknrenderer/eknr-renderer.c:459
