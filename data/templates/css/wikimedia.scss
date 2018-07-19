@@ -630,16 +630,16 @@ and (max-device-width: 719px) {
         }
     }
 
-    .mw-parser-output {
+    #bodycontents #inside-content div:first-of-type {
         display: flex;
         flex-direction: column;
     }
 
-    .mw-parser-output > * {
+    #bodycontents #inside-content * {
         order: 2;
     }
 
-    .mw-parser-output > p:first-of-type {
+    #bodycontents #inside-content p:first-of-type {
         order: 0;
     }
 

@@ -1,4 +1,10 @@
 $(function() {
+        // Make sure we only have one div for ordering of the elements
+        var divP = $(".mw-parser-output");
+        if (divP.parent().is("div")) {
+            divP.unwrap();
+        }
+
 	// Add a wrapper div around first table infobox
 	$(".infobox:first").wrap("<div class='infobox-toggle-wrapper'><div class='infobox-toggle'></div></div>");
 
