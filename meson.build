@@ -18,6 +18,7 @@ namespace_name = 'Eknr'
 
 mathjax_dir = get_option('mathjax_dir')
 
+
 # Dependencies
 
 libendless_req = '>= 0.5'
@@ -48,6 +49,7 @@ gresources = gnome.compile_resources(
 )
 
 subdir('eknrenderer')
+subdir('tests')
 
 # Generated Files
 
