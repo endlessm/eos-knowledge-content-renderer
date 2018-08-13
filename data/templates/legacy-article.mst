@@ -1,6 +1,9 @@
 {{#css-files}}
 <link rel="stylesheet" type="text/css" href="resource:///com/endlessm/knowledge/data/templates/css/{{{.}}}"/>
 {{/css-files}}
+{{#custom-css-files}}
+<link rel="stylesheet" type="text/css" href="{{{.}}}"/>
+{{/custom-css-files}}
 <div class="mw-body" id="bodycontents">
     {{#title}}
     <div class="eos-article-title">
