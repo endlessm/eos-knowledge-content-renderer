@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the eknr package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Jordan Nenov <alabalistic@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-03 16:53+0800\n"
 "PO-Revision-Date: 2018-06-08 20:21+0000\n"
+"Last-Translator: Jordan Nenov <alabalistic@gmail.com>, 2019\n"
 "Language-Team: Bulgarian (https://www.transifex.com/endless-os/teams/9016/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +24,11 @@ msgstr ""
 #: eknrenderer/eknr-renderer.c:459
 #, c-format
 msgid "This page contains content from %s, available under a %s license."
-msgstr ""
+msgstr "Страницата съдържа материали от %s,  предоставени под %s лиценз."
 
 #: eknrenderer/eknr-renderer.c:469
 msgid "http://wikihow.com"
-msgstr ""
+msgstr "http://wikihow.com"
 
 #: eknrenderer/eknr-renderer.c:471
 #, c-format
@@ -32,7 +36,9 @@ msgid ""
 "See %s for more details, videos, pictures and attribution. Courtesy of %s, "
 "where anyone can easily learn how to do anything."
 msgstr ""
+"Посетете %s за повече детайли, видео, снимки и добавки. Любезно предоставени"
+" от %s, където всеки може лесно да научи как да прави всичко."
 
 #: eknrenderer/eknr-renderer.c:615
 msgid "Copy"
-msgstr ""
+msgstr "Копирай"
