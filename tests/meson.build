@@ -7,7 +7,7 @@ javascript_tests = [
 jasmine = find_program('jasmine')
 test_runner = find_program('./tap.py')
 include_path = '@0@:@1@'.format(meson.source_root(), meson.build_root())
-built_library_path = join_paths(meson.build_root(), meson.project_name())
+built_library_path = join_paths(meson.build_root(), 'eknrenderer')
 tests_environment = environment()
 tests_environment.set('GJS_PATH', include_path)
 tests_environment.prepend('GI_TYPELIB_PATH', built_library_path)
