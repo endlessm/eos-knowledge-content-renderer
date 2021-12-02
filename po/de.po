@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Philip Chimento <philip.chimento@gmail.com>, 2018
+# Ettore Atalan <atalanttore@googlemail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 12:25+0000\n"
+"POT-Creation-Date: 2021-11-25 13:25+0000\n"
 "PO-Revision-Date: 2018-06-08 20:21+0000\n"
-"Last-Translator: Philip Chimento <philip.chimento@gmail.com>, 2018\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2021\n"
 "Language-Team: German (https://www.transifex.com/endless-os/teams/9016/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +25,7 @@ msgstr ""
 #: eknrenderer/eknr-renderer.c:459
 #, c-format
 msgid "This page contains content from %s, available under a %s license."
-msgstr "Diese Seite enthält Inhalte von %s und steht unter derLizenz: %s"
+msgstr "Diese Seite enthält Inhalte von %s und steht unter der Lizenz: %s"
 
 #: eknrenderer/eknr-renderer.c:469
 msgid "http://wikihow.com"
@@ -37,8 +38,8 @@ msgid ""
 "where anyone can easily learn how to do anything."
 msgstr ""
 "Auf der Seite %s sind weitere Details, Videos, Bilder und die Autoren "
-"vermerkt. Mit herzlichen Dank an %s, denn dort kann jeder einfach alles "
-"lernen."
+"vermerkt. Freundlicherweise zur Verfügung gestellt von %s, wo jeder leicht "
+"lernen kann, wie man etwas macht."
 
 #: eknrenderer/eknr-renderer.c:615
 msgid "Copy"
