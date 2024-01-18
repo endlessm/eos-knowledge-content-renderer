@@ -5,16 +5,17 @@
 # 
 # Translators:
 # Вадим INARIEL, 2023
+# Victor, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-19 13:25+0000\n"
+"POT-Creation-Date: 2024-01-11 13:25+0000\n"
 "PO-Revision-Date: 2018-06-08 20:21+0000\n"
-"Last-Translator: Вадим INARIEL, 2023\n"
-"Language-Team: Russian (https://www.transifex.com/endless-os/teams/9016/ru/)\n"
+"Last-Translator: Victor, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/endless-os/teams/9016/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +25,7 @@ msgstr ""
 #: eknrenderer/eknr-renderer.c:459
 #, c-format
 msgid "This page contains content from %s, available under a %s license."
-msgstr "Эта страница содержит материалы из %s, доступные по %sлицензии."
+msgstr "Эта страница содержит материалы из %s, доступные по лицензии %s."
 
 #: eknrenderer/eknr-renderer.c:469
 msgid "http://wikihow.com"
@@ -36,9 +37,9 @@ msgid ""
 "See %s for more details, videos, pictures and attribution. Courtesy of %s, "
 "where anyone can easily learn how to do anything."
 msgstr ""
-"Смотрите %s более подробную информацию, видео, фотографии и авторство. "
-"Любезно предоставлено сайтом %s , где каждый может легко научиться делать "
-"что угодно."
+"Смотрите %s для получения подробностей, видео, фотографий и атрибуции. "
+"Любезно предоставлено %s, где каждый может легко научиться делать что "
+"угодно."
 
 #: eknrenderer/eknr-renderer.c:615
 msgid "Copy"
